@@ -22,8 +22,8 @@
       <q-tabs>
         <q-route-tab to="/" icon="home" label="Home"/>
         <q-route-tab to="/Product" icon="store" label="Product"/>
-        <q-route-tab to="/Sold" icon="assignment" label="Stock product"/>
-        <q-route-tab to="/Buy"  icon="check_circle" label="Buy"/>
+        <q-route-tab to="/About" icon="assignment" label="About us"/>
+        <q-route-tab to="/Contact" icon="assignment" label="Contact us"/>
       </q-tabs>
     </q-footer>
 
@@ -78,23 +78,29 @@ export default {
           link: '/'
         },
         {
-          title: 'Stock Product',
-          caption: 'Sold Out',
-          icon: 'assignment',
-          link: '/#/Sold'
-        },
-        {
           title: 'Products',
           caption: 'Our Product',
           icon: 'store',
           link: '/#/Product'
         },
         {
-          title: 'Buy here',
-          caption: 'Buy Our Product here',
-          icon: 'check_circle',
-          link: '/#/Buy'
+          title: 'About us',
+          caption: 'About founder',
+          icon: 'assignment',
+          link: '/#/About'
+        },
+        {
+          title: 'Contact us',
+          caption: 'Contact here',
+          icon: 'assignment',
+          link: '/#/Contact'
         }
+        // {
+        //   title: 'Buy here',
+        //   caption: 'Buy Our Product here',
+        //   icon: 'check_circle',
+        //   link: '/#/Buy'
+        // }
       ]
     }
   }

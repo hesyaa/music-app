@@ -11,6 +11,8 @@
                     :rules="[ val => val && val.length > 0 || 'You should fill this one']" />
                 <q-input v-model="email" placeholder="Email" lazy-rules
                     :rules="[ val => val && val.length > 0 || 'You should fill this one']" />
+                <q-input v-model="notelp" placeholder="notelp" lazy-rules
+                    :rules="[ val => val && val.length > 0 || 'You should fill this one']" />
                   <br>
                 <q-radio v-model="shape" val="line" label="1 unit" />
                 <q-radio v-model="shape" val="rectangle" label="2 Unit" />
@@ -57,6 +59,7 @@ export default {
       name: '',
       address: '',
       email: '',
+      notelp: '',
       mcoin: '',
       link: ''
     }
@@ -69,6 +72,7 @@ export default {
       this.name = null
       this.address = null
       this.email = null
+      this.notelp = null
       this.mcoin = null
     },
     onSubmit () {

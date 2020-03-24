@@ -1,6 +1,6 @@
 <template>
     <div class="pages">
-        <h1 class="text-center">Products</h1>
+        <h2 class="text-center">Products</h2>
         <div class="row text-center">
         <div class="col-12 col-md-6 satu q-pa-md">
          <q-card class="my-card">
@@ -10,10 +10,9 @@
                 <div class="text-h6">$170</div>
                 <div class="text-subtitle1">Category : Guitar</div>
             </q-card-section>
-            <q-card-section class="q-pt-none">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consectetur placeat dignissimos enim! Iste, sapiente veritatis tempora minima consectetur delectus </p>
+            <q-card-section>
                  <q-separator />
-                 <q-card-actions> <q-btn color="secondary" label="Review Product" /></q-card-actions>
+                 <q-card-actions class="q-pa-md"> <q-btn color="secondary" label="Review Product" to="/Review" /></q-card-actions>
             </q-card-section>
         </q-card>
       </div>
@@ -26,9 +25,8 @@
                 <div class="text-subtitle1">Category : Piano</div>
             </q-card-section>
             <q-card-section class="q-pt-none">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consectetur placeat dignissimos enim! Iste, sapiente veritatis tempora minima consectetur delectus </p>
                  <q-separator />
-                 <q-card-actions> <q-btn color="secondary" label="Review Product" /></q-card-actions>
+                 <q-card-actions class="q-pa-md"> <q-btn color="secondary" label="Review Product" to="/Review" /></q-card-actions>
             </q-card-section>
         </q-card>
       </div>
@@ -41,9 +39,8 @@
                 <div class="text-subtitle1">Category : Drum</div>
             </q-card-section>
             <q-card-section class="q-pt-none">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consectetur placeat dignissimos enim! Iste, sapiente veritatis tempora minima consectetur delectus </p>
                  <q-separator />
-                 <q-card-actions>  <q-btn outline color="primary" label="Review Product" class="text-center"/></q-card-actions>
+                 <q-card-actions class="q-pa-md">  <q-btn color="secondary" label="Review Product" to="/Review" /></q-card-actions>
             </q-card-section>
         </q-card>
       </div>
@@ -56,9 +53,8 @@
                 <div class="text-subtitle1">Category : Biola</div>
             </q-card-section>
             <q-card-section class="q-pt-none">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consectetur placeat dignissimos enim! Iste, sapiente veritatis tempora minima consectetur delectus </p>
                  <q-separator />
-                 <q-card-actions>  <q-btn outline color="primary" label="Review Product" class="text-center"/></q-card-actions>
+                 <q-card-actions class="q-pa-md">  <q-btn color="secondary" label="Review Product" to="/Review" /></q-card-actions>
             </q-card-section>
         </q-card>
       </div>
@@ -70,7 +66,7 @@
 
 </script>
 
-<style>
+<style scoped>
 .satu {
     /* border:1px solid silver; */
 }
@@ -87,12 +83,15 @@ p {
 q-btn {
     border: 4px solid red;
 }
-
+.q-btn {
+    margin: auto 3px;
+    width: 100%;
+}
 .text-h5 {
     font-weight: bold;
 }
 
-h1{
+h2{
     text-shadow: gray 2px 2px 4px;
 }
 .pages {
