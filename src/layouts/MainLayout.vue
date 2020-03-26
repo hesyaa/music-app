@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="hHh lpR fFf">
+  <q-layout view="hHh LpR lFf">
     <q-header elevated class="bg-grey-8 text-gray">
       <q-toolbar>
         <!-- <q-btn
@@ -29,12 +29,13 @@
 
     <q-drawer
       v-model="leftDrawerOpen"
-      :breakpoint="768"
+      :breakpoint="1025"
       width="270"
       show-if-above
-      bordered
+      elevated
       content-class="bg-grey-9 text-gray"
     >
+     <q-scroll-area class="fit">
       <q-list dark>
         <q-item-label
           header
@@ -49,6 +50,7 @@
           v-bind="link"
         />
       </q-list>
+     </q-scroll-area>
     </q-drawer>
 
     <q-page-container>
@@ -117,7 +119,7 @@ export default {
     letter-spacing: 2px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     .q-footer {
       display: none;
     }

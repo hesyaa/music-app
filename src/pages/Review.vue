@@ -1,6 +1,6 @@
 <template>
     <div class="row q-pa-lg">
-      <div class="col-12 col-md-7 text-center">
+      <div class="col-12 col-md-6 text-center">
         <q-card class="my-card">
             <img src="statics/guitar.png">
             <q-card-section>
@@ -18,7 +18,7 @@
         <q-list bordered separator>
             <q-item clickable v-ripple class="q-pa-md">
             <q-item-section>
-                <q-item-label>$140.00</q-item-label>
+                <q-item-label>$270.00</q-item-label>
                 <q-item-label caption>Price</q-item-label>
             </q-item-section>
              <q-item-section>
@@ -36,7 +36,7 @@
             </q-item>
         </q-list>
                 <q-btn color="secondary" label="Add to cart" class="text-center"/>
-                <q-btn outline color="primary" label="Buy it Now" class="text-center" to="/Buy"/>
+                <q-btn outline color="primary" label="Checkout" class="text-center" to="/Buy"/>
         </div>
     </div>
 </template>
@@ -47,7 +47,7 @@
 
 <style scoped>
     .col-12 {
-        /* border: 1px solid lightgray; */
+        padding: 10px;
     }
     .my-card {
         box-shadow: none;
@@ -67,5 +67,8 @@
     }
     .q-list {
         margin-bottom: 12px;
+    }
+    .row {
+        margin: auto;
     }
 </style>

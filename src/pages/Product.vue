@@ -10,7 +10,7 @@
                 <div class="text-h6">$170</div>
                 <div class="text-subtitle1">Category : Guitar</div>
             </q-card-section>
-            <q-card-section>
+            <q-card-section class="q-pt-none">
                  <q-separator />
                  <q-card-actions class="q-pa-md"> <q-btn color="secondary" label="Review Product" to="/Review" /></q-card-actions>
             </q-card-section>
@@ -45,7 +45,7 @@
         </q-card>
       </div>
       <div class="col-12 col-md-6 satu q-pa-md">
-         <q-card class="my-card">
+         <q-card class="my-card biola">
             <img src="statics/biola.jpg">
             <q-card-section>
                 <div class="text-h5">Biola sandwood</div>
@@ -74,7 +74,10 @@
 p {
     color: gray;
 }
-
+img {
+    height:350px;
+    background-size: cover;
+}
 .my-card {
     width: 80%;
     margin: 2px auto;
